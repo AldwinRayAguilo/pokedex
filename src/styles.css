@@ -1,0 +1,166 @@
+/* src/styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background: linear-gradient(to bottom, #d0f0ff, #f0f4f8);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #ff1f1f;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.container {
+  padding: 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.card {
+  border-radius: 16px;
+  padding: 1rem;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+button {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #135ba1;
+}
+
+input[type="text"] {
+  border: 1px solid #ccc;
+  padding: 0.6rem;
+  border-radius: 8px;
+  width: 100%;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+a {
+  color: #1976d2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1.2rem;
+}
+
+.confirm-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.confirm-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 3px solid #3b4cca;
+  box-shadow: 0 0 10px rgba(59, 76, 202, 0.6);
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  color: #3b4cca;
+}
+
+.confirm-box .btn {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.confirm-box .btn.yes {
+  background: #ff0000;
+  color: #fff;
+}
+
+.confirm-box .btn.no {
+  background: #3b4cca;
+  color: #fff;
+}
+
+.confirm-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.confirm-box {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  border: 3px solid #3b4cca;
+  box-shadow: 0 0 10px rgba(59, 76, 202, 0.6);
+  font-family: 'Press Start 2P', cursive;
+  color: #3b4cca;
+}
+
+.confirm-box .btn {
+  margin: 0.5rem;
+  padding: 0.4rem 1rem;
+  font-size: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.confirm-box .btn.yes {
+  background: #ef5350;
+  color: #fff;
+}
+
+.confirm-box .btn.no {
+  background: #3b4cca;
+  color: #fff;
+}
+
